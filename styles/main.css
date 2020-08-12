@@ -15,15 +15,36 @@ h2{
     margin-left: 2rem;
     margin-bottom: 2rem;
     padding-top: 1rem;
-
 }
+
 
 form{
     display: flex;
-    align-items: center;
-    
-    
+    align-items: center; 
 }
+
+@media only screen and (max-width: 950px) {
+    form{
+        flex-direction: column;
+        align-items: 0;
+    
+    }
+    button, p, textarea{
+        margin-left: 0 !important;
+
+    } 
+    p{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        width: 80% !important;
+        text-align: center;
+    } 
+    textarea{
+        width: 85% !important;
+    }
+    
+  }
+
 button {
     color: #fff;
     font-size: 1.5rem;
@@ -32,9 +53,7 @@ button {
     border-radius: 0rem;
     margin-left: 4rem; 
     font-family: 'Chilanka', cursive;
-    font-weight: 700;
-    
-    
+    font-weight: 700; 
 }
 
 button:hover{
@@ -48,17 +67,27 @@ p{
     font-family: 'Chilanka', cursive;
     font-weight: 600;
     font-size: 1.1rem;
-    
-
 }
 
 textarea{
     width: 42%;
     margin-left: 2rem;
-    border-radius: 2rem;
+    border-radius: 0rem 3rem 4rem 0rem ;
     box-shadow: 1px 2px 5px 0px #008D9C ;
     margin-bottom: 2rem;
+    border-left: 20px solid #008D9C;
+    
 }
+
+textarea:hover{
+    border-left: 20px solid #D94B18;
+}
+
+textarea:focus{
+    outline:none;
+    
+}
+
 
 .problem{
     
